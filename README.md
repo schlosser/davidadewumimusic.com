@@ -1,11 +1,5 @@
-Project Template
+David Adewumi ([davidadewumimusic.com](http://davidadewumimusic.com))
 ========================================
-
-#### _Because web development doesn't need to be a pain._
-
-The [Minimill](https://minimill.co) project template is the best way to build static sites fast.  With one command, build a static page using [Gulp][gulp], [Handlebars.js][handlebars], and [SCSS][scss].
-
-_Other Versions: [ES6](https://github.com/minimill/project-template/tree/es6), [Minimill internal](https://github.com/minimill/project-template/tree/minimill)_
 
 ## Features
 
@@ -38,15 +32,6 @@ npm install            # One time
 gem install scss_lint  # One time
 gulp serve
 ```
-
-## Reminders
-
-If you want to use this repo for your next project, make sure to make the following changes:
-
-1. Edit `data.yml`, filling in the HTML metadata associated with your site.
-2. Edit `package.json` providing a `name`, `version`, `description`, `license`, and `repository.url`.
-3. Remove the `.git` folder, so that you start from a fresh commit history.
-4. Edit `LICENSE.md` and `README.md` to your preference.
 
 ## Gulp Commands
 
