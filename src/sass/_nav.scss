@@ -1,0 +1,16 @@
+nav {
+  height: 2rem;
+  margin-bottom: 4rem;
+  ul {
+    display: flex;
+
+    li {
+      @extend %h4;
+      margin-right: 2rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

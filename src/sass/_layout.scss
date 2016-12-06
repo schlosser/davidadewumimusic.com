@@ -1,0 +1,46 @@
+$content-width: 35rem;
+
+body {
+  padding: 4rem 4rem 0;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  padding-bottom: 4rem;
+
+  .text-content {
+    @include clearfix;
+    max-width: $content-width;
+    width: 60%;
+    margin-right: 4rem;
+  }
+
+  .image {
+    max-width: 24rem;
+    margin-top: 0.5rem; // line-height hack.
+  }
+}
+
+@media screen and (max-width: $phone-landscape-max) {
+  body {
+    padding: 4rem 2rem 0;
+  }
+
+  .content {
+    flex-direction: column;
+
+    .text-content {
+      margin-right: 0;
+      order: 2;
+      width: 100%;
+    }
+
+    .image {
+      order: 1;
+      margin-bottom: 4rem;
+      width: 100%;
+      max-width: none;
+    }
+  }
+}
