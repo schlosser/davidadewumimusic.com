@@ -162,9 +162,9 @@ gulp.task('build:optimized', function(cb) {
 
 gulp.task('deploy', ['build:optimized'], function() {
   return gulp.src('')
-    .pipe(shell('scp -r dist/* dan:/srv/davidadewumimusic.com/public_html/'))
+    .pipe(shell('scp -r dist/* dan:/srv/daveadewumimusic.com/public_html/'))
     .on('finish', function() {
-      process.stdout.write('Deployed to davidadewumimusic.com/\n');
+      process.stdout.write('Deployed to daveadewumimusic.com/\n');
     });
 });
 
