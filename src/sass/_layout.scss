@@ -1,6 +1,6 @@
 $content-width: 35rem;
 
-body {
+.main {
   padding: 4rem 4rem 0;
 }
 
@@ -18,13 +18,16 @@ body {
 
   .image {
     max-width: 24rem;
-    margin-top: 0.5rem; // line-height hack.
   }
 }
 
 @media screen and (max-width: $phone-landscape-max) {
-  body {
+  .main {
     padding: 4rem 2rem 0;
+  }
+
+  .home {
+    background-position: top left;
   }
 
   .content {
@@ -38,9 +41,16 @@ body {
 
     .image {
       order: 1;
-      margin-bottom: 4rem;
+      margin-bottom: 2.5rem;
       width: 100%;
+      height: 0;
+      padding-bottom: 100%; // square
+      overflow: hidden;
       max-width: none;
+
+      img {
+        margin-top: -30%;
+      }
     }
   }
 }

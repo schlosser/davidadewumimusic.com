@@ -1,0 +1,66 @@
+form {
+  input[type=email] {
+    font-family: $sans;
+    padding: 0.75rem 1.25rem;
+    outline: 0;
+    border: 0;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 20rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+    ::placeholder {
+      font-family: $sans;
+    }
+  }
+
+  [type=submit], button {
+    @extend %h4;
+    font-family: $display;
+    padding: 0.5rem 0.75rem;
+    outline: 0;
+    border: 0;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 20rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: none;
+
+    span {
+      display: inline-block;
+      transform: translate3d(0.75rem, 0, 0);
+      transition: 0.3s ease all;
+    }
+
+    &::after {
+      content: '→';
+      margin-left: 0.5rem;
+      display: inline-block;
+      transform: translate3d(-0.75rem, -0.125rem, 0);
+      font-weight: $bold;
+      opacity: 0;
+      transition: 0.3s ease all;
+    }
+
+    &:hover {
+      span {
+        transform: none;
+      }
+
+      &::after {
+        opacity: 1;
+        transform: translate3d(0, -0.125rem, 0);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $phone-landscape-max) {
+  form {
+    button, [type=submit], input[type=email] {
+      max-width: none;
+    }
+  }
+}

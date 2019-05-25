@@ -1,0 +1,36 @@
+{{#extend "base"}}
+
+{{#content "bodyClass" mode="prepend"}}music{{/content}}
+
+{{#content "main" mode="prepend"}}
+{{> nav }}
+<div class="content">
+    <div class="text-content">
+        <h2>Follow</h2>
+        <div class="button-group">
+            <a target="_blank" href="https://www.youtube.com/channel/UCmAPrjJ9XWFTUilEcoUOVQw" class="button youtube">
+                <span class="color-strip youtube"></span>
+                {{> youtube.svg }}
+                <span class="text">Youtube</span>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/str8outdawumi/?hl=en" class="button instagram">
+                <span class="color-strip instagram"></span>
+                {{> instagram.svg }}
+                <span class="text">Instagram</span>
+            </a>
+        </div>
+
+        <h2>Enjoy</h2>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/X8s-W9WF2EQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/2YSvMeX70w0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="image">
+        <img src="/img/sky.jpg" alt="">
+    </div>
+</div>
+{{/content}}
+{{/extend}}

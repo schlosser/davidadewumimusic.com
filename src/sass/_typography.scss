@@ -5,26 +5,35 @@ $medium: 500;
 $regular: 400;
 $light: 300;
 
-$sans: 'Oswald', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$sans: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$display: 'Oswald', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 h1, %h1 {
+  font-family: $display;
+  font-weight: $regular;
   font-size: 5rem;
-  font-weight: $light;
   letter-spacing: 0.5px;
   margin-bottom: 2.5rem;
   line-height: 1;
 }
 
 h2, %h2 {
+  font-family: $display;
+  font-weight: $regular;
   font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 h3, %h3 {
+  font-family: $display;
+  font-weight: $regular;
   font-size: 1.5rem;
   letter-spacing: 0.5px;
 }
 
 h4, %h4 {
+  font-family: $display;
+  font-weight: $regular;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -36,11 +45,20 @@ h5, %h5 {
 
 p, .p, li {
   font-size: 1rem;
-  line-height: 2;
+  line-height: 1.65;
 }
 
 strong {
   font-weight: $medium;
+}
+
+blockquote, cite {
+  font-style: italic;
+}
+
+cite::before {
+  content: '–';
+  margin: 0 0.25rem;
 }
 
 @media screen and (max-width: $phone-landscape-max) {
