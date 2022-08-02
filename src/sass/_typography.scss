@@ -70,4 +70,7 @@ cite::before {
 }
 
 @media screen and (max-width: $phone-landscape-max) {
+  h1 {
+    font-size: 3rem;
+  }
 }

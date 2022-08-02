@@ -90,3 +90,17 @@
     }
   }
 }
+
+@media screen and (max-width: $phone-landscape-max) {
+  .button-group {
+    flex-direction: column;
+    .button {
+      margin-bottom: 1.5rem;
+      margin-right: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
