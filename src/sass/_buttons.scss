@@ -21,7 +21,8 @@
   transition: 0.3s ease all;
   position: relative;
 
-  .text, svg {
+  .text,
+  svg {
     position: relative;
     z-index: 2;
   }
@@ -44,12 +45,29 @@
     transition: 0.3s ease opacity;
 
     &.instagram {
-
-      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+      background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+      );
     }
 
     &.youtube {
       background: $youtube-red;
+    }
+
+    &.tiktok {
+      box-shadow: -4px -4px 0px $tiktok-blue, 4px 4px 0px $tiktok-red;
+      // background: linear-gradient(
+      //   -45deg,
+      //   $tiktok-blue 0%,
+      //   $tiktok-blue 50%,
+      //   $tiktok-red 50%,
+      //   $tiktok-red 100%
+      // );
     }
   }
 
@@ -71,5 +89,4 @@
       opacity: 1;
     }
   }
-
 }
